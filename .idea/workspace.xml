@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3babf0bb-a0d8-4b31-bede-628708385505" name="Changes" comment="Window and Screen classes created and running">
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/graphics/Sprite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/graphics/SpriteSheet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/input/Keyboard.java" afterDir="false" />
+    <list default="true" id="3babf0bb-a0d8-4b31-bede-628708385505" name="Changes" comment="SpriteSheet and Sprite classes working and loading, for now we have static declarations of both">
+      <change afterPath="$PROJECT_DIR$/src/main/java/game/maps/RandomMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/game/maps/Tiles/GrassTile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/game/maps/Tiles/Tile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/game/maps/WorldMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/graphics/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/graphics/Screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/textures/spritesheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/textures/spritesheet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/graphics/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/graphics/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1735857868431</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="SpriteSheet and Sprite classes working and loading, for now we have static declarations of both">
+      <created>1735996020347</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735996020347</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,6 +94,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Window and Screen classes created and running" />
-    <option name="LAST_COMMIT_MESSAGE" value="Window and Screen classes created and running" />
+    <MESSAGE value="SpriteSheet and Sprite classes working and loading, for now we have static declarations of both" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpriteSheet and Sprite classes working and loading, for now we have static declarations of both" />
   </component>
 </project>
