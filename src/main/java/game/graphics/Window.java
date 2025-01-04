@@ -1,5 +1,7 @@
 package game.graphics;
 
+import game.input.Keyboard;
+
 import javax.swing.JFrame;
 import java.awt.Canvas;
 import java.awt.Dimension;
@@ -15,9 +17,11 @@ public class Window extends Canvas {
     public static int height = width / 16 * 9;
     public static int scale = 3;
 
-    private JFrame frame;
+    public int x = 0, y = 0;
 
+    private JFrame frame;
     private Screen screen;
+    private Keyboard keyboard;
 
     private BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
     private int[] pixels = ((DataBufferInt) image.getRaster().getDataBuffer()).getData();
@@ -51,7 +55,7 @@ public class Window extends Canvas {
         }
 
         screen.clear();
-        screen.render(4);
+        screen.render(x, y);
 
         System.arraycopy(screen.pixels, 0, pixels, 0, pixels.length);
 
@@ -60,5 +64,14 @@ public class Window extends Canvas {
         g.dispose();
 
         bs.show();
+    }
+
+    public void updateFPS (int ups, int fps) {
+        frame.setTitle("Factions Evolution | " + ups + " ups " + fps + " fps");
+    }
+
+    public void setKeyboard(Keyboard keyboard) {
+        this.keyboard = keyboard;
+        addKeyListener(keyboard);
     }
 }

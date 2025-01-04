@@ -1,15 +1,21 @@
 package game;
 
 import game.graphics.Window;
+import game.input.Keyboard;
 
 public class Game implements Runnable{
 
     private Thread gameThread;
     private Window window;
+    private Keyboard keyboard;
+
     private boolean running = false;
 
     public Game () {
         this.window = new Window();
+        this.keyboard = new Keyboard();
+
+        window.setKeyboard(keyboard);
     }
 
     public synchronized void start() {
@@ -49,7 +55,7 @@ public class Game implements Runnable{
 
             if(System.currentTimeMillis() - timer > 1000) {
                 timer += 1000;
-                System.out.println(updates + " ups, " + frames + " fps");
+                window.updateFPS(updates, frames);
                 updates = 0;
                 frames = 0;
             }
@@ -58,7 +64,11 @@ public class Game implements Runnable{
     }
 
     public void update() {
-
+        keyboard.update();
+        if (keyboard.up) window.y--;
+        if (keyboard.down) window.y++;
+        if (keyboard.left) window.x--;
+        if (keyboard.right) window.x++;
     }
 
     public void render() {

@@ -5,10 +5,10 @@ import java.util.Random;
 
 public class Screen {
 
-    private int width, height;
+    private final int width, height;
     public int[] pixels;
-    public final int MAP_SIZE = 8;
-    public final int MAP_SIZE_MASK = 7;
+    public final int MAP_SIZE = 64;
+    public final int MAP_SIZE_MASK = MAP_SIZE - 1;
 
     public int[] tiles = new int[MAP_SIZE * MAP_SIZE];
 
@@ -29,13 +29,14 @@ public class Screen {
         Arrays.fill(pixels, 0);
     }
 
-    public void render(int xOffset) {
+    public void render(int xOffset, int yOffset) {
         for (int y = 0; y < height; y++) {
-            int yy = y;
+            int yp = y - yOffset;
+            if (yp < 0 || yp >= height) continue;
             for (int x = 0; x < width; x++) {
-                int xx = x + xOffset;
-                int tileIndex = ((xx >> 4) & MAP_SIZE_MASK) + ((yy >> 4) & MAP_SIZE_MASK) * MAP_SIZE;
-                pixels[x + y * width] = tiles[tileIndex];
+                int xp = x - xOffset;
+                if (xp < 0 || xp >= width) continue;
+                pixels[xp + yp * width] = Sprite.grass.pixels[(x&15) + (y&15) * Sprite.grass.SIZE];
             }
         }
     }
