@@ -1,6 +1,7 @@
 package game;
 
 import game.entity.Camera;
+import game.entity.unit.Human;
 import game.graphics.Window;
 import game.input.Keyboard;
 import game.maps.RandomMap;
@@ -15,6 +16,7 @@ public class Game implements Runnable{
     private Keyboard keyboard;
     private WorldMap worldMap;
     private Camera camera;
+    private Human human;
 
     private boolean running = false;
 
@@ -23,6 +25,7 @@ public class Game implements Runnable{
         this.keyboard = new Keyboard();
         this.worldMap = new RandomMap(64, 64);
         this.camera = new Camera(keyboard);
+        this.human = new Human(1, 1);
 
         window.setKeyboard(keyboard);
         window.setWorldMap(worldMap);
@@ -77,6 +80,7 @@ public class Game implements Runnable{
     public void update() {
         keyboard.update();
         camera.update();
+        human.update();
     }
 
     public void render() {

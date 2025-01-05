@@ -1,5 +1,8 @@
 package game.entity.unit;
 
+import game.graphics.Screen;
+import game.graphics.Sprite;
+
 public class Human extends Unit {
 
     public Human () {
@@ -16,8 +19,7 @@ public class Human extends Unit {
     }
 
     @Override
-    public void render() {
-
+    public void render(Screen screen) {
+        screen.renderHuman(x, y, Sprite.human);
     }
-
 }

@@ -1,6 +1,8 @@
 package game.graphics;
 
 import game.entity.Camera;
+import game.entity.Entity;
+import game.entity.unit.Human;
 import game.input.Keyboard;
 import game.maps.WorldMap;
 
@@ -24,6 +26,7 @@ public class Window extends Canvas {
     private Keyboard keyboard;
     private WorldMap worldMap;
     private Camera camera;
+    private Human human = new Human(0, 0);
 
     private BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
     private int[] pixels = ((DataBufferInt) image.getRaster().getDataBuffer()).getData();
@@ -59,6 +62,7 @@ public class Window extends Canvas {
 
         screen.clear();
         worldMap.render(camera.x, camera.y, screen);
+        human.render(screen);
 
         System.arraycopy(screen.pixels, 0, pixels, 0, pixels.length);
 

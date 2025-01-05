@@ -2,7 +2,7 @@ package game.entity;
 
 import game.input.Keyboard;
 
-public class Camera extends Entity{
+public class Camera extends Entity {
 
     private Keyboard input;
 

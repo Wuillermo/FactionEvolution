@@ -10,6 +10,13 @@ public class Sprite {
     public static Sprite grass = new Sprite(16, 0, 0, SpriteSheet.tiles);
     public static Sprite voidSprite = new Sprite(16, 0x1B87E0);
 
+    public static Sprite human0 = new Sprite(16, 0, 10, SpriteSheet.tiles);
+    public static Sprite human1 = new Sprite(16, 1, 10, SpriteSheet.tiles);
+    public static Sprite human2 = new Sprite(16, 0, 11, SpriteSheet.tiles);
+    public static Sprite human3 = new Sprite(16, 1, 11, SpriteSheet.tiles);
+
+    public static Sprite human = new Sprite(32, 0, 5, SpriteSheet.tiles);
+
     public Sprite(int size, int x, int y, SpriteSheet sheet) {
         this.SIZE = size;
         this.pixels = new int[SIZE * SIZE];
