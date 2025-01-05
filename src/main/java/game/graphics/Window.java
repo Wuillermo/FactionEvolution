@@ -1,5 +1,6 @@
 package game.graphics;
 
+import game.entity.Camera;
 import game.input.Keyboard;
 import game.maps.WorldMap;
 
@@ -18,12 +19,11 @@ public class Window extends Canvas {
     public static int height = width / 16 * 9;
     public static int scale = 3;
 
-    public int x = 0, y = 0;
-
     private JFrame frame;
     private Screen screen;
     private Keyboard keyboard;
     private WorldMap worldMap;
+    private Camera camera;
 
     private BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
     private int[] pixels = ((DataBufferInt) image.getRaster().getDataBuffer()).getData();
@@ -58,7 +58,7 @@ public class Window extends Canvas {
         }
 
         screen.clear();
-        worldMap.render(x, y, screen);
+        worldMap.render(camera.x, camera.y, screen);
 
         System.arraycopy(screen.pixels, 0, pixels, 0, pixels.length);
 
@@ -80,5 +80,9 @@ public class Window extends Canvas {
 
     public void setWorldMap(WorldMap worldMap) {
         this.worldMap = worldMap;
+    }
+
+    public void setCamera(Camera camera) {
+        this.camera = camera;
     }
 }

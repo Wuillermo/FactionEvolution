@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3babf0bb-a0d8-4b31-bede-628708385505" name="Changes" comment="Maps and Tile classes created">
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/maps/tiles/VoidTile.java" afterDir="false" />
+    <list default="true" id="3babf0bb-a0d8-4b31-bede-628708385505" name="Changes" comment="Rendering a RandomMap, and handling map bounds">
+      <change afterPath="$PROJECT_DIR$/src/main/java/game/entity/Camera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/game/entity/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/game/entity/unit/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/game/entity/unit/Unit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/textures/spritesheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/textures/spritesheet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/graphics/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/graphics/Screen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/graphics/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/graphics/Sprite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/graphics/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/graphics/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/maps/RandomMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/maps/RandomMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/maps/Tiles/GrassTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/maps/tiles/GrassTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/maps/Tiles/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/maps/tiles/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/maps/WorldMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/maps/WorldMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +61,20 @@
       <recent name="D:\dev\FactionEvolution\docs" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="FactionEvolution" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -96,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1736005053769</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Rendering a RandomMap, and handling map bounds">
+      <created>1736036001424</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736036001424</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +130,7 @@
     <MESSAGE value="Window and Screen classes created and running" />
     <MESSAGE value="SpriteSheet and Sprite classes working and loading, for now we have static declarations of both" />
     <MESSAGE value="Maps and Tile classes created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Maps and Tile classes created" />
+    <MESSAGE value="Rendering a RandomMap, and handling map bounds" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rendering a RandomMap, and handling map bounds" />
   </component>
 </project>

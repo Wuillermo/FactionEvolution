@@ -1,5 +1,6 @@
 package game;
 
+import game.entity.Camera;
 import game.graphics.Window;
 import game.input.Keyboard;
 import game.maps.RandomMap;
@@ -13,6 +14,7 @@ public class Game implements Runnable{
     private Window window;
     private Keyboard keyboard;
     private WorldMap worldMap;
+    private Camera camera;
 
     private boolean running = false;
 
@@ -20,9 +22,11 @@ public class Game implements Runnable{
         this.window = new Window();
         this.keyboard = new Keyboard();
         this.worldMap = new RandomMap(64, 64);
+        this.camera = new Camera(keyboard);
 
         window.setKeyboard(keyboard);
         window.setWorldMap(worldMap);
+        window.setCamera(camera);
     }
 
     public synchronized void start() {
@@ -72,10 +76,7 @@ public class Game implements Runnable{
 
     public void update() {
         keyboard.update();
-        if (keyboard.up) window.y--;
-        if (keyboard.down) window.y++;
-        if (keyboard.left) window.x--;
-        if (keyboard.right) window.x++;
+        camera.update();
     }
 
     public void render() {
