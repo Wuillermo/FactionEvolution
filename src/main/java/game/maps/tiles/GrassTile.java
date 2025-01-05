@@ -1,4 +1,4 @@
-package game.maps.Tiles;
+package game.maps.tiles;
 
 import game.graphics.Screen;
 import game.graphics.Sprite;
@@ -11,6 +11,6 @@ public class GrassTile extends Tile{
 
     @Override
     public void render(int x, int y, Screen screen) {
-        screen.renderTile(x, y, this);
+        screen.renderTile(x << 4, y << 4, this);
     }
 }

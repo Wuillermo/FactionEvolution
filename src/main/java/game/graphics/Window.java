@@ -1,6 +1,7 @@
 package game.graphics;
 
 import game.input.Keyboard;
+import game.maps.WorldMap;
 
 import javax.swing.JFrame;
 import java.awt.Canvas;
@@ -22,6 +23,7 @@ public class Window extends Canvas {
     private JFrame frame;
     private Screen screen;
     private Keyboard keyboard;
+    private WorldMap worldMap;
 
     private BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
     private int[] pixels = ((DataBufferInt) image.getRaster().getDataBuffer()).getData();
@@ -56,7 +58,7 @@ public class Window extends Canvas {
         }
 
         screen.clear();
-        screen.render(x, y);
+        worldMap.render(x, y, screen);
 
         System.arraycopy(screen.pixels, 0, pixels, 0, pixels.length);
 
@@ -74,5 +76,9 @@ public class Window extends Canvas {
     public void setKeyboard(Keyboard keyboard) {
         this.keyboard = keyboard;
         addKeyListener(keyboard);
+    }
+
+    public void setWorldMap(WorldMap worldMap) {
+        this.worldMap = worldMap;
     }
 }

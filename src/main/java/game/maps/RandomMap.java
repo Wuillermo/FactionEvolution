@@ -4,11 +4,10 @@ import java.util.Random;
 
 public class RandomMap extends WorldMap{
 
-    private final Random random;
+    private static final Random random = new Random();
 
     public RandomMap(int width, int height) {
         super(width, height);
-        this.random = new Random();
     }
 
     @Override

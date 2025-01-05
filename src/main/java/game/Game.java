@@ -2,20 +2,27 @@ package game;
 
 import game.graphics.Window;
 import game.input.Keyboard;
+import game.maps.RandomMap;
+import game.maps.WorldMap;
+
+import java.util.logging.Level;
 
 public class Game implements Runnable{
 
     private Thread gameThread;
     private Window window;
     private Keyboard keyboard;
+    private WorldMap worldMap;
 
     private boolean running = false;
 
     public Game () {
         this.window = new Window();
         this.keyboard = new Keyboard();
+        this.worldMap = new RandomMap(64, 64);
 
         window.setKeyboard(keyboard);
+        window.setWorldMap(worldMap);
     }
 
     public synchronized void start() {
