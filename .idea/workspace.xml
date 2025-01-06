@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3babf0bb-a0d8-4b31-bede-628708385505" name="Changes" comment="Entity, Unit and Camera classes created. Movement now depends on the camera x and y">
+    <list default="true" id="3babf0bb-a0d8-4b31-bede-628708385505" name="Changes" comment="Human rendering, 32 bit Sprite">
+      <change afterPath="$PROJECT_DIR$/src/main/java/game/maps/tiles/FlowerTile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/game/maps/tiles/RockTile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/textures/spritesheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/textures/spritesheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/entity/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/entity/Camera.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/entity/unit/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/entity/unit/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/graphics/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/graphics/Screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/entity/unit/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/entity/unit/Unit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/graphics/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/graphics/Sprite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/graphics/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/graphics/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/maps/WorldMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/maps/WorldMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/maps/tiles/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/maps/tiles/Tile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +57,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="game.maps.tiles" />
       <recent name="game.maps.Tiles" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -120,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1736094924219</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Human rendering, 32 bit Sprite">
+      <created>1736103928021</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736103928021</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,6 +149,7 @@
     <MESSAGE value="Maps and Tile classes created" />
     <MESSAGE value="Rendering a RandomMap, and handling map bounds" />
     <MESSAGE value="Entity, Unit and Camera classes created. Movement now depends on the camera x and y" />
-    <option name="LAST_COMMIT_MESSAGE" value="Entity, Unit and Camera classes created. Movement now depends on the camera x and y" />
+    <MESSAGE value="Human rendering, 32 bit Sprite" />
+    <option name="LAST_COMMIT_MESSAGE" value="Human rendering, 32 bit Sprite" />
   </component>
 </project>

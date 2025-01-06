@@ -7,7 +7,7 @@ public abstract class Unit extends Entity {
 
     protected Sprite sprite;
     protected boolean moving = false;
-    protected int dir = 0;
+    protected int dir = -1;
     /*
     * dir:
     * 0 = up
