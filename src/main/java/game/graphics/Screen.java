@@ -10,7 +10,7 @@ public class Screen {
 
     public final int width, height;
     public int[] pixels;
-    public final int MAP_SIZE = 64;
+    public final int MAP_SIZE = 32;
 
     public int xOffset, yOffset;
 

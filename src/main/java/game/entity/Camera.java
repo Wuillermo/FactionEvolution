@@ -18,9 +18,13 @@ public class Camera extends Entity {
 
     @Override
     public void update() {
-        if(input.up) y--;
+        /*if(input.up) y--;
         if(input.down) y++;
         if(input.left) x--;
-        if(input.right) x++;
+        if(input.right) x++;*/
+        if(input.up) y-=3;
+        if(input.down) y+=3;
+        if(input.left) x-=3;
+        if(input.right) x+=3;
     }
 }

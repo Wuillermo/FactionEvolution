@@ -1,0 +1,7 @@
+
+
+- Fill borders with water
+
+-   Start with a randomly positioned one-tile seed, determine the desired size for the continent and each turn add a tile
+    that is horizontally or vertically adjacent to the existing continent until you've reached the desired size. Repeat
+    for the other continents.
